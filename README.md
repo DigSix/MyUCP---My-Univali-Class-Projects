@@ -5,6 +5,6 @@ Hello, World! I am Diogo Morgado Viana, actually a student of computer science a
 
 
 ## Author
-Created by Diogo Viana \n
-Just for study; no commercial interests
-Using the teacher´s materials
+Created by Diogo Viana\
+Just for study; no commercial interests\
+Using the teacher´s materials\
