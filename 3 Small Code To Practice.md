@@ -32,31 +32,31 @@ int main() {
     return 0;
 }
 ```
-
+### Filing a vector with random, not repeatable numbers.
 ```c++
 #include <iostream>
 using namespace std;
 
 int main() {
-    int N = 50;
-    int vet[N];
+
+    int N = 50, vet[N], n = 0;
+    bool check;
+    
     srand(time(0));
     
-
-    
     for (int i = 0; i < N; i++){
-        vet[i] = rand() % 50;
-        for (int i_2 = 0; i_2 < i; i_2++){
-            if (vet[i_2] == vet[i]){
-                vet[i_2] = rand() % 50;
-            }
-    }  
-    }    
-    for (int i = 0; i < N; i++){
+        check = true;
+        while (check){
+            n = rand() % N;
+            check = false;
+            for (int j = 0; j < i; j++)
+                if (vet[j] == n){
+                    check = true;
+                }
+        }
+        vet[i] = n;
         cout << vet[i] << " ";
     }
-
-    
     return 0;
 }
 ```
